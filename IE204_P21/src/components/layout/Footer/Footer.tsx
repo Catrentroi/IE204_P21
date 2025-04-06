@@ -5,26 +5,34 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>About Us</h3>
-          <p>Short description of the company.</p>
+          <h1>LabubUIT</h1>
+          <h4 className = "text-gray-400">Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh.</h4>
         </div>
         <div className="footer-section">
-          <h3>Quick Links</h3>
+          <h3>Đường dẫn</h3>
           <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about">Trang chủ</a></li>
+            <li><a href="/products">Sản phẩm</a></li>
+            <li><a href="/blog">Về chúng tôi</a></li>
+            <li><a href="/contact">Liên hệ</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Contact</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
+          <h3>Hỗ trợ</h3>
+          <p>Phương thức thanh toán</p>
+          <p>Hoàn trả</p>
+          <p>Chính sách bảo mật</p>
+        </div>
+        <div className="footer-section">
+          <h3>Liên hệ</h3>
+          <div className="footer-contact">
+            <input type="text" placeholder="Nhập email của bạn" className="email-input border-0"/>
+            <button className="btn btn-primary">Gửi</button>
+          </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>© 2023 Your Company. All rights reserved.</p>
+        <p>2025 LabubUIT. All rights reverved.</p>
       </div>
     </footer>
   );
