@@ -1,0 +1,94 @@
+/* Register Form Styles */
+.register-container {
+    max-width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.register-form-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 40px;
+    border-radius: 0px;
+}
+
+.register-form-wrapper {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #9f9f9f;
+}
+
+.register-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2a95bf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.register-button:hover {
+    background-color: #2180a6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .register-form-container {
+        max-width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .register-form-container {
+        padding: 20px;
+    }
+
+    .register-title {
+        font-size: 30px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+    }
+}
