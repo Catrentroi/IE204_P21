@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Liên hệ</h3>
           <div className="footer-contact">
-            <input type="text" placeholder="Nhập email của bạn" className="email-input border-0"/>
+            <input type="text" placeholder="Nhập email của bạn" className="email-input"/>
             <button className="btn btn-primary">Gửi</button>
           </div>
         </div>
