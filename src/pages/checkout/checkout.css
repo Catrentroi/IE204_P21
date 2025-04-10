@@ -1,0 +1,151 @@
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .checkout-header {
+    margin-bottom: 30px;
+  }
+  
+  .checkout-header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .checkout-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+  }
+  
+  .checkout-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .order-summary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details {
+    margin-bottom: 20px;
+  }
+  
+  .product-details h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .product-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .total-amount {
+    margin: 20px 0;
+  }
+  
+  .subtotal,
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .total {
+    font-weight: bold;
+    font-size: 18px;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+    color: #B88E2F;
+  }
+  
+  .payment-methods {
+    margin: 20px 0;
+  }
+  
+  .payment-methods h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .payment-option input[type="radio"] {
+    margin: 0;
+  }
+  
+  .checkout-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #40a9ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-button:hover {
+    background-color: #1890ff;
+  }
+  
+  @media (max-width: 768px) {
+    .checkout-content {
+      grid-template-columns: 1fr;
+    }
+  }
