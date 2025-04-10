@@ -1,0 +1,93 @@
+/* Login Form Styles */
+.login-container {
+    max-width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 600px; /* Tăng kích thước từ 500px lên 600px */
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 40px; /* Tăng padding từ 30px lên 40px */
+    border-radius: 0px;
+}
+
+.login-form-wrapper {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px; /* Tăng khoảng cách giữa các trường từ 20px lên 25px */
+}
+
+.form-group label {
+    display: block;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 22px; /* Tăng kích thước font từ 20px lên 22px */
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px; /* Tăng padding từ 10px lên 12px */
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 18px; /* Tăng kích thước font từ 16px lên 18px */
+    color: #9f9f9f;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px; /* Tăng padding từ 12px lên 15px */
+    background-color: #2a95bf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px; /* Tăng kích thước font từ 18px lên 20px */
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.login-button:hover {
+    background-color: #2180a6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .login-form-container {
+        max-width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .login-form-container {
+        padding: 20px;
+    }
+
+    .login-title {
+        font-size: 30px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+    }
+}

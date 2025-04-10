@@ -1,0 +1,76 @@
+/* CSS cho component ContactForm */
+.contact-form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    flex: 2;
+    min-width: 300px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #9f9f9f;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9f9f9f;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-button {
+    background-color: #2a95bf;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #227797;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 30px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+    .submit-button {
+        width: 100%;
+        font-size: 18px;
+    }
+}
