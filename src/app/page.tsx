@@ -1,107 +1,127 @@
-'use client'
 import Image from "next/image";
-import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function Home() {
-  const router = useRouter();
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* Hero Banner Section */}
+      <section className="hero-banner">
+        <div className="container">
+          <div className="hero-content">
+            <div className="hero-badge">SẢN PHẨM MỚI</div>
+            <h1 className="hero-title">KHÁM PHÁ NGAY BỘ SƯU TẬP MỚI</h1>
+            <p className="hero-description">
+              Đợi chờ gì nữa mà không sắm ngay cho mình một bé Labubu về để decor căn phòng bé xinh của mình nào ❤️
+            </p>
+            <Link href="/products" className="hero-button">
+              mua ngay
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* Featured Products Section */}
+      <section className="featured-products">
+        <div className="container">
+          <h2 className="section-title">SẢN PHẨM NỔI BẬT</h2>
+          
+          <div className="featured-grid">
+            <div className="featured-item">
+              <div className="featured-image">
+                <Image src="https://picsum.photos/400/500" alt="LABUBU Diver Figurine" width={400} height={500} />
+              </div>
+              <h3 className="featured-title">LABUBU Diver Figurine</h3>
+            </div>
+            
+            <div className="featured-item">
+              <div className="featured-image">
+                <Image src="https://picsum.photos/400/501" alt="LABUBU × PRONOUNCE" width={400} height={500} />
+              </div>
+              <h3 className="featured-title">LABUBU × PRONOUNCE - WINGS OF FORTUNE Vinyl Plush Hanging Card</h3>
+            </div>
+            
+            <div className="featured-item">
+              <div className="featured-image">
+                <Image src="https://picsum.photos/400/502" alt="THE MONSTERS × One Piece Series" width={400} height={500} />
+              </div>
+              <h3 className="featured-title">THE MONSTERS × One Piece Series Figures</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="products-section">
+        <div className="container">
+          <h2 className="section-title">SẢN PHẨM</h2>
+          
+          <div className="product-grid">
+            {Array(8).fill(0).map((_, index) => (
+              <div className="product-card" key={index}>
+                <div className="product-image">
+                  <Image src={`https://picsum.photos/300/300?random=${index}`} alt={`Product ${index + 1}`} width={300} height={300} />
+                  {index % 3 === 0 && <div className="product-badge discount">-30%</div>}
+                  {index % 4 === 1 && <div className="product-badge new">New</div>}
+                </div>
+                
+                <div className="product-info">
+                  <h3 className="product-title">{['Syltherine', 'Leviosa', 'Lolito', 'Respira', 'Grifo', 'Muggo', 'Pingky', 'Potty'][index % 8]}</h3>
+                  <p className="product-description">Stylish decorative figure</p>
+                  <div className="product-price">
+                    <span className="current-price">Rp {(index + 2) * 500}.000</span>
+                    {index % 2 === 0 && <span className="original-price">Rp {(index + 3) * 500}.000</span>}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="show-more-container">
+            <button className="show-more-button">Hiển thị thêm</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section className="blog-section">
+        <div className="container">
+          <div className="blog-header">
+            <h2 className="section-title">Xem thêm blog về LABUBU</h2>
+            <p className="section-subtitle">
+              Our designer already made a lot of beautiful prototipe of rooms that inspire you
+            </p>
+          </div>
+          
+          <div className="blog-content">
+            <div className="blog-image">
+              <div className="blog-overlay">
+                <div className="blog-counter">01</div>
+                <h3 className="blog-title">Labubu là gì?</h3>
+              </div>
+            </div>
+            
+            <button className="explore-button">Explore More</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="social-section">
+        <div className="container">
+          <div className="social-header">
+            <h3 className="social-subtitle">Cùng chia sẻ khoảng khắc với</h3>
+            <h2 className="social-title">#LabubUIT</h2>
+          </div>
+          
+          <div className="social-grid">
+            {Array(9).fill(0).map((_, index) => (
+              <div className="social-image" key={index}>
+                <Image src={`https://picsum.photos/200/200?random=${index + 20}`} alt={`Social Image ${index + 1}`} width={200} height={200} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
