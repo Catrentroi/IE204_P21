@@ -340,3 +340,118 @@
 .modal-content {
   padding: 1rem;
 } 
+.banner {
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  background-image: url('https://s3-alpha-sig.figma.com/img/1461/f3d6/ff74c027a1888544144abe4be6e02cbf?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fpUOMfcZN4ZJTBtG1~O0TxgCXfB81yKrMogvlCDs46pNjHst7WicqnmmsCVyIbe6tQ042ie6fPM7eihNfHNNS3iFZeTuFOekN276RHqkXApcmHm8rrxqp~NSEGeRWJp3yjBuv16evLx9mvIjLPlTe5AXx~s0pQRj5QiyAKNWT-36hEiP92doNwZCHODfkCW3Ups-~XLhH6RAhkVLOKI9lIWT1ChpuRXVmReSYp95Ah6D8EsRZvMjqmbBxfQoLTeU~dIi9Vpc2U4o08cpEv4Ove7wWXNT-vIyFVMs4~t2aU2nJGIQ1ET2b8VvS7~OTSXIqFU0-iDqIVC43I-W7vr2JA__');
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(115, 115, 115, 0.36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  color: white;
+  text-align: center;
+}
+
+.banner-text h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.banner-text p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+.about-content {
+  max-width: 768px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .content-inner {
+    flex-direction: row;
+
+    gap: 2rem
+  }
+}
+
+.rounded-img {
+  border-radius: 1rem;
+}
+
+.text-content {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.text-content p {
+  margin-bottom: 1rem;
+}
+
+.text-content ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.text-content li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+.features {
+  background-color: #f3f4f6;
+  padding: 2.5rem 1rem;
+}
+
+.features-grid {
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.desc {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
